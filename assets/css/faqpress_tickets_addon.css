@@ -1,0 +1,1010 @@
+
+/*--------------------------------------------------------------------*\
+    #General
+    \*--------------------------------------------------------------------*/
+
+    .ck.ck-toolbar.ck-toolbar_grouping {
+        background: #0073aa;
+    }
+    .ck-editor__editable {
+        height: 250px;
+    }
+    .clear{
+        clear:both;
+    }
+
+    .clearfix:after, .clearfix:before{
+        display:table;
+        content:""
+    }
+
+    .clearfix:after{
+        clear:both;
+    }
+
+    .clearfix{
+        *zoom:1
+    }
+
+    *{
+        box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+    }
+
+    html,
+    html.no-js{
+        margin-top: 0 !important;
+        overflow-x: hidden;
+    }
+
+
+    body {
+        background: #ffffff;
+        color: #333333;
+        font-family: 'inherit';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.2px;
+        overflow: initial;
+        position: relative;
+        text-rendering: optimizeLegibility;
+        margin: 0 !important;
+    }
+
+    a,
+    a:visited{
+        color: inherit;
+        outline: none;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+    a:hover,
+    a:visited:hover{
+        color: #3386ef;
+        text-decoration: underline;
+    }
+
+    a:focus{
+        color: inherit;
+        outline: none;
+    }
+
+    p{
+        margin: 0 0 16px;
+    }
+
+    label {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    img{
+        display: block;
+        max-width: 100%;
+        vertical-align: top;
+    }
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    ol {
+        margin: 0;
+        padding-left: 30px;
+    }
+
+    li {
+        margin-bottom: 0;
+    }
+
+    b, strong {
+        font-weight: 700;
+    }
+
+    h1, h2, h3, h4, h5 , h6{
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 15px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    h3{
+        font-size: 28px;
+    }
+
+    h4{
+        font-size: 24px;
+    }
+
+    h5{
+        font-size: 18px;
+    }
+
+    h6{
+        font-size: 16px;
+    }
+
+    h1:not(.site-title):before,
+    h2:before{
+        display: none;
+    }
+
+    form a:hover{
+        color: #3386ef;
+        text-decoration: underline;
+    }
+
+
+    input[type="text"], input[type="email"], 
+    input[type="url"], input[type="password"], 
+    input[type="search"], input[type="number"], 
+    input[type="tel"], input[type="range"], 
+    input[type="date"], input[type="month"], 
+    input[type="week"], input[type="time"], 
+    input[type="datetime"], input[type="datetime-local"], 
+    input[type="color"], textarea {
+        border: 2px solid #cccccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        outline: none;
+        padding: 0.36rem 0.66rem;
+        -webkit-appearance: none;
+        outline-offset: 0;
+    }
+
+    input[type="text"]:focus, input[type="email"]:focus,
+    input[type="url"]:focus, input[type="password"]:focus,
+    input[type="search"]:focus, input[type="number"]:focus, 
+    input[type="tel"]:focus, input[type="range"]:focus, 
+    input[type="date"]:focus, input[type="month"]:focus, 
+    input[type="week"]:focus, input[type="time"]:focus, 
+    input[type="datetime"]:focus, input[type="datetime-local"]:focus, 
+    input[type="color"]:focus, textarea:focus{
+        outline: none;
+        border-color: #cccccc;
+    }
+
+    input[type="checkbox"], 
+    input[type="radio"] {
+        border: 2px solid #cccccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 17px;
+        outline: none;
+        margin-right: 5px;
+        position: relative;
+        top: 2px;
+        width: 17px;
+    }
+
+    a.btn,
+    button {
+        background: #0073aa;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        color: #ffffff;
+        font-family: "Raleway";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        outline: none;
+        padding: 13px 28px;
+        text-transform: none;
+        text-decoration: none;
+    }
+
+    .register-page {
+        box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+        font-size: 16px;
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    .form-header {
+        padding: 20px 0;
+    }
+
+    .registered_form {
+        border-bottom: 2px solid #cccccc40;
+        padding-bottom: 40px;
+    }
+
+    .registered_form .form-group {
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    .registered_form .form-group input {
+        margin: 0;
+    }
+
+    .registered_form label {
+        display: block;
+        font-family: "Raleway";
+        font-size: 16px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+
+    .registered_form input {
+        display: block;
+        font-family: "Raleway";
+        font-size: 16px;
+        outline: none;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .registered_form select {
+        display: block;
+        border: 2px solid #cccccc;
+        border-radius: 5px;
+        color: #333333;
+        font-family: "Raleway";
+        font-size: 16px;
+        outline: none;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .registered_form textarea {
+        display: block;
+        border: 2px solid #cccccc;
+        border-radius: 5px;
+        font-family: "Raleway";
+        font-size: 16px;
+        height: 145px;
+        outline: none;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .registered_form input.form-checkbox {
+        display: inline-block;
+        width: 17px;
+    }
+
+    .registered_form .input-name {
+        display: inline;
+        width: calc(50% - 3px);
+    }
+
+    .registered_form .link-btn {
+        float: right;
+    }
+
+    .message {
+        padding: 20px 0;
+    }
+
+    .social-login {
+        padding: 35px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .social-login h5 {
+        font-weight: 400;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .social-login a {
+        border: 1px solid rgba(0,0,0,0.05);
+        color: #fff;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 2px;
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 4%;
+        position: relative;
+        text-decoration: none !important;
+        text-transform: uppercase;
+        text-align: center;
+        width: calc(45% - 10px);
+    }
+
+    .social-login a:hover {
+        color: #ffffff;
+    }
+
+    .social-login .facebook-btn {
+        background-color: #49639F;
+        margin-left: 0;
+    }
+
+    .social-login .google-btn {
+        background-color: #DF4A32;
+    }
+
+    .social-login a i {
+        position: relative;
+        margin-right: 3px;
+        width: 25px;
+    }
+
+    .password-page .registered_form{
+        border-bottom: none;
+    }
+
+
+
+    /***** Ticket Css*********/
+
+
+    .ticket-page {
+        max-width: 100%;
+        margin: 0 !important;
+        padding: 30px 15px 0;
+        position: relative;
+    }
+
+    .ticket-form{
+        box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+        font-size: 16px;
+        margin: 0 0 30px;
+        padding: 40px;
+    }
+
+    .button-bottom{
+        position: relative;
+        width: 100%;
+        text-align: right;
+    }
+
+    .button-bottom .btn {
+        display: inline-block;
+    }
+
+    .button-bottom .btn:hover,
+    .btn-credential:hover,
+    .btn-logout:hover {
+        background: transparent;
+        border: 2px solid #0073aa;
+        color: #0073aa !important;
+    }
+
+    .ticket-form .registered_form {
+        border: none;
+        padding-bottom: 20px;
+    }
+
+    .registered_form .file-area {
+        padding-bottom: 35px;
+        position: relative;
+        width: 100%;
+    }
+
+    .registered_form .form-group .input-uploader {
+        bottom: 0;
+        cursor: pointer;
+        height: calc(100% - 54px);
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 34px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .btn-file-uploader {
+        color: #999999 !important;
+        background: rgba(255,255,255,0.2);
+        border: 2px dashed #cccccc;
+        font-family: "Raleway";
+        font-size: 14px;
+        padding: 40px;
+        text-align: center;
+        transition: background 0.3s ease-in-out;
+        width: 100%;
+    }
+
+    .btn-file-uploader:hover {
+        background: transparent;
+        border-color: #cccccc;
+        color: #999999 !important;
+        font-family: "Raleway" !important;
+        font-weight: 700;
+    }
+
+    .btn-file-uploader:before,
+    .btn-file-uploader:after {
+        display: none;
+    }
+
+
+    .ticket-table {
+        clear: both;
+        padding: 30px 0;
+    }
+
+    table {
+        border: none;
+        font-family: "Raleway";
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .ticket-table thead tr {
+        border-bottom: 2px solid #cccccc;
+        display: block;
+        position: relative;
+    }
+
+    .ticket-table tbody tr {
+        background: #ffffff;
+        box-shadow: 0px 0px 5px 0px #cccccc7d;
+        display: block;
+        margin: 20px 0;
+        position: relative;
+    }
+
+    table th {
+        background: #f1f1f1;
+        border: none;
+        color: #2f353e;
+        font-weight: 700;
+        min-width: 120px;
+        padding: 15px;
+        text-align: left;
+        text-transform: capitalize;
+        vertical-align: top;
+        width: 25%;
+    }
+
+    table td {
+        border: none;
+        color: #111111;
+        min-width: 120px;
+        padding: 15px;
+        text-align: left;
+        vertical-align: top;
+        width: 25%;
+    }
+
+    .ticket-status {
+        display: block;
+        background-color: #0073aa;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        padding: 5px;
+        text-align: center;
+        width: 65px;
+    }
+
+    .ticket-status.Open{
+        background-color: #41b545;
+    }
+
+    .ticket-status.Closed{
+        background-color: #a94442;
+    }
+
+    .ticket-header {
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .ticket-header h3 {
+        display: inline;
+    }
+
+    .ticket-header a {
+        display: inline;
+        float: right;
+        padding: 5px 0;
+    }
+
+    .ticket-search {
+        float: left;
+        padding-top: 20px;
+        width: auto;
+    }
+
+    .ticket-search .searchterm {
+        border-right: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        font-family: 'Raleway';
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .ticket-search .searchbutton {
+        background: #0073aa;
+        border-color: #0073aa;
+        border-left: none;
+        margin-left: -7px;
+        padding: 9.8px 15px;
+    }
+
+    .ticket-search .search {
+        display: inline-flex;
+    }
+
+    .top-btn {
+        float: right;
+        width: auto;
+        padding: 25px 0 0;
+    }
+
+    .button-bottom .page-numbers {
+        display: inline-flex;
+        margin: 0;
+    }
+
+    .button-bottom .page-numbers li {
+        display: inline;
+    }
+
+    .button-bottom .page-numbers li a {
+        border: 1px solid #dddddd;
+        font-family: 'Raleway';
+        font-size: 16px;
+        font-weight: 600;
+        padding: 9px 15px;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .button-bottom .page-numbers li a:hover {
+        background: #0073aa;
+        border-color: transparent;
+        color: #ffffff;
+    }
+
+    .button-bottom .page-numbers .current {
+        background: #0073aa;
+        border-color: transparent;
+        color: #ffffff;
+        border: 1px solid #dddddd;
+        font-family: 'Raleway';
+        font-size: 16px;
+        font-weight: 600;
+        padding: 9px 15px;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .single-ticket-block {
+        display: inline-block;
+        border: 1px solid #cccccc;
+        float: left;
+        min-height: 205px;
+        margin: 20px 10px;
+        width: calc(50% - 20px);
+    }
+
+    .single-ticket-block h5 {
+        background: #cccccc;
+        color: #444444;
+        padding: 10px 20px;
+    }
+
+    .single-ticket-block .ticket-table {
+        padding: 0 20px 20px;
+        position: relative;
+    }
+
+    .single-ticket-block .ticket-table table {
+        border: none;
+    }
+
+    .single-ticket-block .ticket-table tbody tr {
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .single-ticket-block .ticket-table tr:nth-child(even){
+        background: transparent;
+    }
+
+    .single-ticket-block .ticket-table td {
+        display: inline;
+        border: none;
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .single-ticket-block .ticket-table td:first-child {
+        font-weight: 700;
+        padding-right: 5px;
+    }
+
+    .single-ticket-block .ticket-table td:first-child:after {
+        content: ':';
+        margin-left: 3px;
+    }
+
+    .reply-detail {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .avatar-message {
+        margin: 10px 10px 30px 90px;
+        position: relative;
+        width: 100%;
+    }
+
+    .avatar-message:before {
+        position: absolute;
+        display: block;
+        top: 8px;
+        left: -20px;
+        content: '';
+        width: 10px;
+        height: 10px;
+        border: 2px solid #0073aa;
+        border-width: 10px;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    .avatar-message .panel-image {
+        position: absolute;
+        left: -80px;
+        display: block;
+        width: 60px;
+        height: 60px;
+        padding: 0px;
+        border-radius: 50%;
+        text-align: center;
+        float: left;
+    }
+
+    .avatar-message .panel-heading {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        color: #fff;
+        background-color: #0073aa;
+        border-color: #0073aa;
+        display: flex;
+        padding: 10px 15px;
+    }
+
+    .avatar-message .panel-heading h6 {
+        color: #ffffff;
+        margin-bottom: 5px;
+        padding-right: 10px;
+    }
+
+    .avatar-message .panel-heading .date {
+        font-family: "Raleway";
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .avatar-message.response:before {
+        border: 2px solid #cccccc;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        left: -25px;
+        border-width: 15px;
+    }
+
+    .avatar-message .panel-reply {
+        border: 2px solid #0073aa;
+        padding: 15px;
+    }
+
+    .avatar-message.response .panel-heading {
+        background-color: #cccccc;
+        color: #444444;
+        border-color: #cccccc;
+    }
+
+    .avatar-message.response .panel-reply {
+        border-color: #cccccc;
+    }
+
+    .avatar-message.response .panel-heading h6{
+        color: #444444;
+    }
+
+    .ticket-content .btn-file-uploader {
+        padding: 12px;
+        border-top: none;
+        margin-bottom: 20px;
+    }
+
+    .ticket-content .registered_form {
+        border-bottom: none;
+    }
+
+    .ticket-content .registered_form .input-uploader {
+        height: 54px;
+        bottom: 40px;
+        top: auto;
+    }
+
+    .ticket-content .registered_form img {
+        margin-bottom: 0;
+    }
+
+    .ticket-content #drop-zone {
+        margin-bottom: 30px;
+    }
+
+    .ticket-content button {
+        margin-bottom: 20px;
+    }
+
+
+    /********************************/
+
+
+    #drop-zone {
+        margin: auto;
+        position: relative;
+        border: 2px dashed #CCC;
+        border-radius: 5px;
+        color: #b0b0b0;
+        height: 150px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .file_uploader_text {
+        font-size: 18px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0 5px;
+        width: 100%;
+        height: 100%;
+    }
+
+    #drop-zone input {
+      position: absolute;
+      cursor: pointer;
+      left: 0px !important;
+      top: 0px !important;
+      opacity: 0;
+      height: 100%;
+      z-index: 2;
+  }
+  /*Important*/
+
+  #drop-zone.mouse-over {
+      border: 3px dashed rgba(0, 0, 0, .3);
+      color: #7E7E7E;
+  }
+  /*If you dont want the button*/
+
+  #clickHere {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    width: auto;
+    padding: 0;
+}
+
+#filename {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+.upload-file-name {
+    display: block !important;
+    background: #ffffff;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+
+.file-preview {
+  background: #ccc;
+  border: 5px solid #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+/************************************\
+            Private Credentials
+            \************************************/
+
+            .faq-pc-modal {
+                align-items: center;
+                background-color: rgb(255 255 255 / 0.7);
+                display: none !important;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                left: 0;
+                padding: 35px 50px;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 999999;
+            }
+
+            .faq-pc-modal.open {
+                display: flex !important;
+            }
+
+            .faq-pc-modal .faq-close-btn {
+                color: #0073aa;
+                display: block;
+                font-size: 35px;
+                line-height: 50px;
+                right: 0;
+                margin-right: 15px;
+                top: 0;
+                position: absolute;
+                text-align: right;
+                text-decoration: none !important;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+            }
+
+            .faq-pc-modal .faq-pc-modal-content {
+                background: #ffffff;
+                border-top: 5px solid #0073aa;
+                box-shadow: 0 0 25px #cccccc;
+                display:block;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 30px;
+                position: relative;
+                width: 100%;
+                z-index: 2;
+            }
+
+            .faq-pc-modal .faq-pc-modal-content h3 {
+                color: #0073aa;
+                line-height: 50px;
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            .faq-pc-form {
+                clear: both;
+                display: block;
+                max-width: 600px;
+                margin: 0 auto;
+                position: relative;
+            }
+
+            .faq-pc-form .faq-form-group {
+                clear: both;
+                display: block;
+                position: relative;
+            }
+
+            .faq-form-group label {
+                display: block;
+                float: left;
+                margin-bottom: 15px;
+                padding: 4px;
+                text-align: left;
+                width: 20%;
+            }
+
+            .faq-form-group input {
+                border: none;
+                border-radius: 0;
+                border-bottom: 2px solid #ccc;
+                display: block;
+                float: left;
+                height: auto;
+                line-height: 1;
+                margin-bottom: 13px;
+                padding: 5px;
+                width: 80%;
+            }
+
+            .faq-form-group textarea {
+                display: block;
+                float: left;
+                min-height: 75px;
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+
+            .faq-form-group.checkbox-row {
+                padding: 5px;
+            }
+
+            .faq-form-group.checkbox-row input {
+                display: inline;
+                float: none;
+                height: 17px;
+                width: 17px;
+            }
+
+            .faq-form-group.checkbox-row label {
+                display: inline;
+                float: none;
+                text-align: center;
+            }
+
+            .faq-pc-form .faq-pc-btn{
+                padding: 25px 0;
+                text-align: center;
+            }
+
+            .faq-pc-form .faq-pc-btn .btn {
+                background: #0073aa;
+                border-color: #0073aa;
+                color: #ffffff;
+                display: inline;
+                font-size: 16px;
+                height: auto;
+                line-height: 1;
+                margin: 0 10px;
+                padding: 13px 28px;
+                position: relative;
+                width: auto;
+            }
+
+            @media (max-width: 767px){
+                .register-page {
+                    padding: 30px;
+                }
+
+                .registered_form .link-btn {
+                    display: block;
+                    float: none;
+                }
+
+                .social-login {
+                    padding: 20px 0;
+                }
+
+                .social-login a {
+                    padding: 10px 5px;
+                    width: 47%;
+                }
+            }
