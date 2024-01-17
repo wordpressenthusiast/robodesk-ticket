@@ -1,6 +1,6 @@
 So here are the tasks. I will create a doc as well in sometime.
-Create a new plugin called "Robodesk Addon"
-Create a post type "Queries"
+Create a new plugin called "Robodesk Ticket Addon"
+Create a post type "Tickets"
 Add meta fields "Name", "Email", "Converted to FAQ?  (This will be checkbox)
 The add on should take styling and functionality from the free plugin.
 The plugin should be activable only when Robodesk is active.
@@ -11,9 +11,6 @@ Do not re-do the form on this addon Use the same form fro the main plugin. Just 
 
 
 robodesk tickets add on
-if that email is already exist ask please login for register user
+if that email exists, ask them to login.
 
-when user ask question after sending query show related question like search 
-when we back to your query please find this faq which may be help full
-
-
+when user ask question after sending query show related question so that they can have quicker answers.
