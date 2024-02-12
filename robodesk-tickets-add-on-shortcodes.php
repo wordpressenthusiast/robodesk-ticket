@@ -86,7 +86,7 @@ if (!function_exists('robodesk_tickets_registered_user_login_form')) {
 					<p>
 						<input id="checkbox-signup rememberme" class="form-checkbox" name="rememberme" value="forever"
 							type="checkbox">Remember me
-						<a href="http://193.235.147.161/wp/robodesk/forget-password" class="link-btn">Forget your password?</a>
+						<a href="<?php echo site_url(); ?>/forget-password" class="link-btn">Forget your password?</a>
 					</p>
 					<button id="robodesk_tickets_login_submit" class="btn">Login Now</button>
 				</form>
@@ -101,7 +101,7 @@ if (!function_exists('robodesk_tickets_registered_user_login_form')) {
 						Google
 					</a>
 				</div>
-				<div class="message">Don't have an account? <a href="http://193.235.147.161/wp/robodesk/sign-up">Register Now</a>
+				<div class="message">Don't have an account? <a href="<?php echo site_url(); ?>/sign-up">Register Now</a>
 				</div>
 			</div>
 		</div>
@@ -160,7 +160,7 @@ if (!function_exists('robodesk_tickets_user_signup_form')) {
 							Google
 						</a>
 					</div>
-					<div class="message">Already registered? <a href="http://193.235.147.161/wp/robodesk/login">Log In</a></div>
+					<div class="message">Already registered? <a href="<?php echo site_url(); ?>/login">Log In</a></div>
 				</div>
 			</div>
 		</div>
@@ -202,7 +202,7 @@ if (!function_exists('robodesk_tickets_user_forget_password_form')) {
 						<input name="email" id="robodesk_tickets_email" class="required" type="email" placeholder="Email Address">
 						<div class="reset-button">
 							<button id="reset_submit" class="btn">Reset Password</button>
-							<a href="http://193.235.147.161/wp/robodesk/login" class="link-btn">Back to login</a>
+							<a href="<?php echo site_url(); ?>/login" class="link-btn">Back to login</a>
 						</div>
 					</form>
 					<form class="registered_form" name="forget_password" id="forget_password" action="" method="post">
@@ -434,7 +434,7 @@ if (!function_exists('robodesk_tickets_user_create_ticket')) {
 						</div>
 					</div>
 					<div class="button-bottom">
-						<a href="http://193.235.147.161/wp/robodesk/my-ticket/" class="btn">
+						<a href="<?php echo site_url(); ?>/my-ticket/" class="btn">
 							<?php _e('My Tickets', 'robodesk'); ?>
 						</a>
 						<a href="" class="btn btn-logout">
@@ -480,7 +480,7 @@ if (!function_exists('robodesk_tickets_user_my_ticket')) {
 							<h3>
 								<?php _e('My Tickets', 'robodesk'); ?>
 							</h3>
-							<a href="http://193.235.147.161/wp/robodesk/create-ticket/" style="font-weight: 700;">
+							<a href="<?php echo site_url(); ?>/create-ticket/" style="font-weight: 700;">
 								<?php _e('+ MAKE SUPPORT REQUEST', 'robodesk'); ?>
 							</a>
 						</div>
@@ -822,7 +822,7 @@ if (!function_exists('robodesk_tickets_user_ticket_single')) {
 							<button id="" class="btn">Submit Ticket</button>
 					</form>
 					<div class="button-bottom">
-						<a href="http://193.235.147.161/wp/robodesk/my-ticket/" class="btn">Back to Tickets</a>
+						<a href="<?php echo site_url(); ?>/my-ticket/" class="btn">Back to Tickets</a>
 						<a href="" class="btn btn-logout">Log Out</a>
 					</div>
 				</div>

@@ -234,7 +234,7 @@ if (is_user_logged_in()) {
 							</script>
 					</form>
 					<div class="button-bottom">
-						<a href="http://193.235.147.161/wp/robodesk/my-ticket/" class="btn">Back to Tickets</a>
+						<a href="<?php echo site_url(); ?>/my-ticket/" class="btn">Back to Tickets</a>
 						<a href="" class="btn btn-logout">Log Out</a>
 					</div>
 				</div>
